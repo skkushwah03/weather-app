@@ -1,0 +1,106 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    background: linear-gradient(135deg, #51e0ba, #736ca0);
+}
+.container {
+    width: 400px;
+    height: min-content;
+    background-color: white;
+    border-radius: 20px;
+    padding: 25px;
+}
+.searchbx {
+    width: 100%;
+    height: min-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.searchbx input {
+    width: 85%;
+    font-size: 22px;
+    text-transform: capitalize;
+    color: black;
+    background-color: #e6f0f4;
+    padding: 12px 16px;
+    border-radius: 15px;
+}
+.searchbx input::placeholder {
+    color: black;
+}
+.searchbx button {
+    width: 45px;
+    height: 45px;
+    background-color: #e6f0f4;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 22px;
+}
+.searchbx button:hover {
+    color: #fff;
+    background-color: #ababab;
+}
+.weatherbody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-block: 20px;
+}
+.weatherbody img {
+    width: 60%;
+}
+.Weather-box {
+    margin-block: 20px;
+    text-align: center;
+}
+.Weather-box .temper {
+    font-size: 40px;
+    font-weight: 600;
+    position: relative;
+}
+.Weather-box .temper sup {
+    font-size: 20px;
+    position: absolute;
+}
+.Weather-box .descrption {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.weather-details {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.humidity, .wind {
+    display: flex;
+    align-items: center;
+}
+.humidity {
+    margin-left: 20px;
+}
+.wind {
+    margin-right: 20px;
+}
+.weather-details .text {
+    margin-left: 10px;
+    font-size: 15px;
+}
+.text span {
+    font-size: 20px;
+    font-weight: 650;
+}
